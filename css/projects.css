@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+  }
+
+  .body{
+      background-image: url(../images/Backgrounds/adrian-infernus-GLf7bAwCdYg-unsplash.jpg);
+      background-repeat: no-repeat;
+      background-size:auto;
+  }
+
+.container{
+    display: flex;
+    gap: 3rem;
+    align-items:flex-start;
+    position: relative;
+    justify-content: center;
+    /* top: 50%; */
+    left: 5%;
+    /* transform: translate(-50%,-50%); */
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3em;
+    /* scale */
+    overflow: hidden;
+    width: 80%;
+    /* glass */
+    z-index:1;
+    backdrop-filter: blur(40px);
+    border: solid 2px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(19, 19, 19, 0.03);
+}
+/* create templates for different cards like long and short ones */
+.project-container{
+
+    /* width: 600px; */
+    
+    /* align-items: center; */
+    
+}
+/* cards */
+.project{
+    margin-bottom:10px;
+    background: whitesmoke;
+    overflow: hidden;
+    border-radius: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.project img{
+    height: 180px;
+    width: 500px;
+    padding:20px;
+    border-radius: 4em;
+}
+
+.project-name{
+    display: inline-flex;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    cursor:default;
+
+}
+
+.project-name h5 ,button{
+    display: inline-flex;
+    align-items: center;
+    padding: 0 70px;
+}
+
+
+
