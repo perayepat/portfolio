@@ -13,19 +13,20 @@
       background-size:auto;
   }
 
+
+
 .container{
-    display: flex;
-    gap: 3rem;
+    display:flex;
+    gap: 2rem;
     align-items:flex-start;
     position: relative;
     justify-content: center;
-    /* top: 50%; */
-    left: 5%;
-    /* transform: translate(-50%,-50%); */
-    padding: 100px;
+    padding: 40px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,5%);
     background: rgba(255, 255, 255, 0.2);
     border-radius: 3em;
-    /* scale */
     overflow: hidden;
     width: 80%;
     /* glass */
@@ -36,46 +37,91 @@
     box-shadow: 10px 10px 10px rgba(19, 19, 19, 0.03);
 }
 /* create templates for different cards like long and short ones */
-.project-container{
-
-    /* width: 600px; */
-    
-    /* align-items: center; */
-    
+.project-container .header {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 25px;
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'roboto', sans-serif;
+    color: white;
 }
+
+.header h4{
+    padding: 0 40px ;
+}
+
 /* cards */
 .project{
-    margin-bottom:10px;
-    background: whitesmoke;
+    margin-bottom:25px;
+    background: rgba(245, 245, 245, 0.816);
     overflow: hidden;
-    border-radius: 3em;
+    border-radius: 2em;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items:center;
+    
+    box-shadow: 10px 10px 10px rgba(19, 19, 19, 0.03);
+
+    
 }
 
 .project img{
     height: 180px;
     width: 500px;
     padding:20px;
-    border-radius: 4em;
+    border-radius: 3em;
 }
 
 .project-name{
     display: inline-flex;
-    padding: 0;
+    padding: 0 90px;
     font-family: 'roboto', sans-serif;
-    font-size: 2em;
-    font-weight: 500;
     cursor:default;
+    /* padding: 0 40px; */
 
 }
 
-.project-name h5 ,button{
+.project-name h5 {
+    display: inline-flex;
+    padding: 0 20px;
+    font-size: 1.4em;
+} 
+
+.project-name a{
+    font-size:15px;
+    text-decoration: none;
+    color:white;
+    padding: 2px 50px 0 50px ;
+    border: 1px solid black;
+    border-radius: 3em;
+    background-color: black;
+    transition: 300ms ease-in-out;
+
+}
+
+.project-name a:hover{
+    background-color: transparent ;
+    color:black;
+}
+
+
+.project p {
+    display: flex;
+    padding: 30px 30px 10px 70px ;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.project footer{
+    border-top: 1px sol black;
     display: inline-flex;
     align-items: center;
-    padding: 0 70px;
+    padding-bottom: 20px;
 }
 
-
-
+.project footer p{
+    font-weight: 700;
+    
+}
