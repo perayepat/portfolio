@@ -8,30 +8,21 @@
   }
 
   .body{
-      background-image: url(../images/Backgrounds/adrian-infernus-GLf7bAwCdYg-unsplash.jpg);
-      background-repeat: no-repeat;
-      background-size:auto;
+      /* background-image: url(../images/Backgrounds/adrian-infernus-GLf7bAwCdYg-unsplash.jpg); */
+    display: grid;
+    background-position: fixed;
+    background-width: 100%;
+    background-size: cover;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-auto-rows: 380px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 20px 80px;
   }
 
-
-
-.container{
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3,1fr);
-    max-width: 1200px;
-    padding: 80px 200px;
-}
 /* create templates for different cards like long and short ones */
-.project-container .header {
-    display: inline-flex;
-    align-items: center;
-    padding-bottom: 25px;
-    font-weight: 700;
-    font-size: 35px;
-    font-family: 'roboto', sans-serif;
-    color: white;
-}
+
 
 .header h4{
     padding: 0 40px ;
@@ -39,33 +30,26 @@
 
 /* cards */
 .project{
-    margin-bottom:25px;
-    background: rgba(245, 245, 245, 0.816);
+    background: rgba(85, 85, 85, 0.816);
     overflow: hidden;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
     align-items:center;
-    
     box-shadow: 10px 10px 10px rgba(19, 19, 19, 0.03);
-
-    
 }
 
 .project img{
-    height: 180px;
-    width: 500px;
+    height: 50%;
+    width: 90%;
     padding:20px;
     border-radius: 3em;
 }
 
 .project-name{
     display: inline-flex;
-    padding: 0 90px;
     font-family: 'roboto', sans-serif;
     cursor:default;
-    /* padding: 0 40px; */
-
 }
 
 .project-name h5 {
@@ -83,7 +67,6 @@
     border-radius: 3em;
     background-color: black;
     transition: 300ms ease-in-out;
-
 }
 
 .project-name a:hover{
@@ -94,20 +77,19 @@
 
 .project p {
     display: flex;
-    padding: 30px 30px 10px 70px ;
+    padding: 10px 10px 10px 10px ;
     font-size: 1em;
     text-align: center;
     font-family: 'roboto', sans-serif;
 }
 
 .project footer{
-    border-top: 1px sol black;
     display: inline-flex;
     align-items: center;
-    padding-bottom: 20px;
 }
 
 .project footer p{
     font-weight: 700;
+    display: inline-flex;
     
 }
