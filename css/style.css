@@ -215,6 +215,102 @@
     grid-row: span 1/ auto;
   }
 }
+/* Form */
+.modal{
+  display: grid;
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  border-radius: 2em;
+  max-width: 550px;
+  width: 90%;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+.modal.active{
+  display: grid;
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  transition: 200ms ease-in-out;
+  border-radius: 2em;
+  max-width: 550px;
+  width: 90%;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+.modal form{
+  display: grid;
+  position: fixed;
+  top: 50%;left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 2em;
+  max-width: 550px;
+  width: 90%;
+  padding: 40px;
+  box-sizing: border-box;
+  z-index: 5;
+
+  /* glass */
+  background-color: rgba(223, 223, 223, 0.296);
+  backdrop-filter: blur(40px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px 10px rgba(34, 34, 34, 0.179);
+
+}
+
+
+.modal form input{
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 2em;
+  background:none;
+  margin-bottom:10px; 
+  
+}
+
+.modal form textarea{
+  border: 1px solid;
+  border-radius: 2em;
+  text-align: center;
+  margin-bottom:10px; 
+  border: 1px solid black;
+  background:none;
+  /* border:none; */
+}
+
+.modal form Button{
+  border-radius: 2em;
+  background:black;
+  color:white;
+  font-weight: 700;
+  border:none;
+  padding: 7px;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(255, 255, 255, 0.46);
+  z-index: 2;
+  pointer-events: none;
+  transition: 200ms ease-in-out;
+
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+/* form end  */
+
 
 .home-grid .card {
   filter: drop-shadow(5px 10px 10px #00000025);

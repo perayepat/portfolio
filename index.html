@@ -22,7 +22,7 @@
     
     </head>
     <body>
-        
+
         <header class="header">
         <div class="wrapper">
             <h1 class="logo">
@@ -48,7 +48,17 @@
         <h1 class= "openingText">Hi I'm a game developer</h1>
         
         </section>
-
+        <!-- Modal For contact -->
+        <div id="overlay"></div>
+        <div class="modal " id="modal">
+            <form action="https://formsubmit.co/mphathimaapola@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="New email from site">
+                <input type="email" name="email" required placeholder="Email">
+                <textarea type="text" name="name" rows="6" placeholder="Message"></textarea>
+                <button type="submit" data-close-button class="close-button">Send</button>
+           </form>
+        </div>
+        <!-- Modal end -->
         <section class="home-grid">
 
             <div
@@ -117,14 +127,15 @@
             >
             
             </div>
+          
             <div
-             class="card card-wider"
+             class="card card-wider" id="contactMe"
              style="background-image: url(./images/templatePictures/8.jpg)"
             >
-            <a href="" class="button">
-                <p>Contact Me</p>
-                <i class="fas fa-location-arrow"></i>
-            </a>
+                    <a class="button" id="contactBtn" data-modal-target="#modal">
+                        <p>Contact Me</p>
+                        <i class="fas fa-location-arrow"></i>
+                    </a>               
             </div>
             
 
