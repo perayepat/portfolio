@@ -189,8 +189,89 @@
     .card-taller{
       grid-row: span 3/ auto;
     }
+    
+
 }
 @media screen and (max-width: 750px) {
+
+.nav-toggle{
+  position: fixed;
+  left: 90%;
+  top: 4%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  flex-direction: column;
+  justify-content: space-between;
+  width:30px;
+  height:20px;
+  background-color: black;
+}
+
+.nav-toggle.bar{
+  height: 3px;
+  width: 100%;
+  background-color:black;
+  border-radius: 10px;
+}
+
+  .wrapper {
+    padding: 30px 50px 60px 10px;
+    flex-direction:column;
+    align-items:flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align:center;
+    margin: 0 auto;
+    position:fixed; 
+    /* right: 600px; top:-20px;  */
+    top: -2%;
+    left: -2%;
+    /* transform: translate(-50%,-320%); */
+    z-index: 9;
+    width:100%;
+  }
+
+  .tabs{
+    display: none;
+  }
+
+  .tabs.active{
+    /* margin-top:50px; */
+    font-size:15px;
+    padding:10px;
+    list-style:none;
+    box-shadow:0px 5px 20px rgba(202, 193, 193, 0.1);
+    display:grid;
+    border-radius:40px;
+    position:relative;
+    background: transparent;
+    transition: background 400ms ease-in-out;
+  }
+
+  
+  .tabs a{
+    text-decoration:none;
+    /* color: rgb(255, 255, 255); */
+    color: black;
+    text-transform:uppercase;
+    padding:10px 20px;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    transition-duration:0.6s;
+  }
+  .tabs a i{
+       margin-right:10px;
+  }
+/* Hovers */
+.tabs a:hover{
+    color: rgb(255, 255, 255);
+}
+  .tabs a:hover{
+      background-color:rgba(0, 0, 0, 0.631);
+    border-radius:50px;
+  }
+
   .home-grid{
     display:grid;
     gap: 4rem;

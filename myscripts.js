@@ -4,6 +4,15 @@ const navbar = document.querySelector(".tabs");
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
+const navToggle = document.getElementById('navToggle');
+const navbarLinks = document.querySelector(".tabs");
+
+// navbar
+navToggle.addEventListener("click", () =>{
+    console.log("navbar clicked");
+        navbarLinks.classList.add('active')
+    })
+// navbar end
 
 openModalButtons.forEach(button => {
     button.addEventListener("click", () =>{
