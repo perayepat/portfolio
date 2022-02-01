@@ -37,8 +37,8 @@
             <nav class="tabs"  id="navbar">
               <a href="#"><i class="fab fa-fort-awesome"></i>Home</a>
               <a href="Pages/projects.html"  target="_blank" class="active"><i class="fas fa-folder-open"></i>Projects</a>
-              <a href="#education"><i class="fas fa-certificate "></i>Skills</a>
-              <a href="Pages/skills.html"><i class="fas fa-chart-pie"></i>About</a>
+              <a href="Pages/skills.html" target="_blank" ><i class="fas fa-certificate "></i>Skills</a>
+              <a href="Pages/skills.html" target="_blank" ><i class="fas fa-chart-pie"></i>About</a>
               <a href="#About"><i class="fas fa-comments"></i>Contact Me</a>
             </nav>
         </div> 
@@ -56,6 +56,10 @@
         <!-- Modal For contact -->
         <div id="overlay"></div>
         <div class="modal " id="modal">
+            <div class="contactLabel">
+                <h1>Contact Me</h1>
+                <button data-close-button_1 class="close-button" >&times;</button>
+            </div>
             <form action="https://formsubmit.co/mphathimaapola@gmail.com" method="POST">
                 <input type="hidden" name="_subject" value="New email from site">
                 <input type="email" name="email" required placeholder="Email">
@@ -107,7 +111,7 @@
              class="card card-wide"
             >
             <img src="./images/templatePictures/4.jpg" alt="" class="bg">
-            <a href="Pages/skills.html" class="button">
+            <a href="Pages/skills.html" target="_blank" class="button">
                 <p>Skills</p>
                 <i class="fas fa-location-arrow"></i>
             </a>

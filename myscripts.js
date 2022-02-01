@@ -2,7 +2,7 @@ const header = document.querySelector("header");
 const sectionOne = document.querySelector(".home");
 const navbar = document.querySelector(".tabs");
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
-const closeModalButtons = document.querySelectorAll('[data-close-button]');
+const closeModalButtons = document.querySelectorAll('[data-close-button_1]');
 const overlay = document.getElementById('overlay');
 const navToggle = document.getElementById('navToggle');
 const navbarLinks = document.querySelector(".tabs");
@@ -24,7 +24,8 @@ openModalButtons.forEach(button => {
 closeModalButtons.forEach(button => {
     button.addEventListener("click", () =>{
         // close button
-        closeopenModal(modal)
+        const modals = button.closest('.modal')
+        closeopenModal(modals)
     })
 })
 
