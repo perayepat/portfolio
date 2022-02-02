@@ -10,7 +10,7 @@
     position:absolute; 
     /* right: 600px; top:-20px;  */
     top: -3%;
-    left: 35%;
+    left: 39%;
     /* transform: translate(-50%,-320%); */
     z-index: 9999; 
   }
@@ -51,4 +51,17 @@
   .tabs a:hover{
       background-color:rgba(0, 0, 0, 0.631);
     border-radius:50px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .tabs{
+      display:flex;
+      left:-42%;
+    }
+
+    .tabs a{
+      font-size:12px;
+
+    }
   }
